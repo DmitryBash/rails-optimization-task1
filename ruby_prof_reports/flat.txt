@@ -1,0 +1,68 @@
+Measure Mode: wall_time
+Thread ID: 70271428075480
+Fiber ID: 70271420544480
+Total: 0.082590
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 39.11      0.032     0.032     0.000     0.000      154   Array#select                   
+ 16.70      0.014     0.014     0.000     0.000     1000   Array#all?                     
+  9.99      0.071     0.008     0.000     0.063       10   Array#each                     
+  9.81      0.008     0.008     0.000     0.000        1   <Class::IO>#write              
+  4.10      0.012     0.003     0.000     0.009     1696   Array#map                      
+  4.04      0.008     0.003     0.000     0.004      846   <Class::Date>#parse            
+  2.92      0.002     0.002     0.000     0.000     2001   String#split                   
+  2.72      0.002     0.002     0.000     0.000     1692   Regexp#match                   
+  1.26      0.002     0.001     0.000     0.001        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  1.05      0.002     0.001     0.000     0.001      846   Object#parse_session           task-1.rb:30
+  0.90      0.001     0.001     0.000     0.000      846   String#gsub!                   
+  0.82      0.001     0.001     0.000     0.000     2546   String#encode                  
+  0.81      0.001     0.001     0.000     0.000      309   Array#sort                     
+  0.73      0.001     0.001     0.000     0.000      846   MatchData#begin                
+  0.60      0.000     0.000     0.000     0.000     2328   String#upcase                  
+  0.57      0.000     0.000     0.000     0.000      846   Date#iso8601                   
+  0.45      0.000     0.000     0.000     0.000     1078   Hash#merge                     
+  0.40      0.000     0.000     0.000     0.000     1732   Date#<=>                       
+  0.39      0.000     0.000     0.000     0.000     1692   String#to_i                    
+  0.38      0.000     0.000     0.000     0.000      154   Array#any?                     
+  0.33      0.000     0.000     0.000     0.000      846   String#[]=                     
+  0.21      0.000     0.000     0.000     0.000     1236   String#to_s                    
+  0.20      0.000     0.000     0.000     0.000      155   Array#join                     
+  0.20      0.000     0.000     0.000     0.000      154   Class#new                      
+  0.20      0.000     0.000     0.000     0.000      846   MatchData#end                  
+  0.19      0.000     0.000     0.000     0.000      846   Integer#div                    
+  0.19      0.000     0.000     0.000     0.000      154   Object#parse_user              task-1.rb:20
+  0.12      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
+  0.11      0.000     0.000     0.000     0.000      154   User#initialize                task-1.rb:14
+  0.09      0.000     0.000     0.000     0.000      308   Integer#to_s                   
+  0.07      0.000     0.000     0.000     0.000        1   Array#uniq                     
+  0.05      0.083     0.000     0.000     0.083        1   Object#work                    task-1.rb:49
+  0.05      0.000     0.000     0.000     0.000      154   Array#reverse                  
+  0.05      0.000     0.000     0.000     0.000      156   Hash#keys                      
+  0.05      0.000     0.000     0.000     0.000      154   Array#max                      
+  0.04      0.000     0.000     0.000     0.000      154   Array#sum                      
+  0.04      0.000     0.000     0.000     0.000      157   Array#count                    
+  0.03      0.083     0.000     0.000     0.083        1   [global]#                      task-1.rb:204
+  0.01      0.016     0.000     0.000     0.016        7   Object#collect_stats_from_users task-1.rb:41
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#dup                     
+  0.00      0.000     0.000     0.000     0.000        1   Symbol#to_s                    
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#initialize_dup          
+  0.00      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
